@@ -27,7 +27,7 @@ const Signup = () => {
         },
       };
       const body = JSON.stringify(newUser);
-      const res = await axios.post('https://loginbrandwic.onrender.com/singu', body, config);
+      const res = await axios.post('https://loginbrandwic.onrender.com/signup', body, config);
       console.log(res.data);
     } catch (err) {
       console.error(err.response.data);
