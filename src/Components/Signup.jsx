@@ -13,7 +13,7 @@ const Signup = () => {
  const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
- const onSubmit = async (e) => {
+ const HandleSubmit = async (e) => {
     e.preventDefault();
     try {
       const newUser = {
@@ -37,7 +37,7 @@ const Signup = () => {
  return (
     <div className="signup">
       <h2>Sign Up</h2>
-      <form onSubmit={(e) => onSubmit(e)}>
+      <form onSubmit={(e) => HandleSubmit(e)}>
         <input
           type="text"
           placeholder="Name"
