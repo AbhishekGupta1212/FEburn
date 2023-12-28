@@ -10,7 +10,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://loginbrandwic.onrender.com/login', {
+      const response = await fetch('https://loginbrandwic.onrender.com/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
